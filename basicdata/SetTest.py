@@ -2,9 +2,7 @@
 # 基本功能是进行成员关系测试和删除重复元素。
 # 可以使用大括号 { } 或者 set() 函数创建集合，注意：创建一个空集合必须用 set() 而不是 { }，因为 { } 是用来创建一个空字典。
 # 创建格式：
-# parame = {value01,value02,...}
-# 或者
-# set(value)
+# parame = {value01,value02,...} 或者 set(value)
 
 sites = {'Google', 'Taobao',  'Facebook', 'Zhihu', 'Baidu'}
 print(sites)   # 输出集合，重复的元素被自动去掉
