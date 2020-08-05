@@ -27,3 +27,11 @@ print(r'pa\nncm')
 # pa
 # ncm
 # pa\nncm
+
+
+# str.format将数据进行格式化，类似java的String.format
+print("{}:你好,{}".format("python","hi"))
+# python:你好,hi
+print("{name}:你好,{word}".format(name="python",word="hi"))
+# python:你好,hi
+
