@@ -1,6 +1,5 @@
 # 导入 socket、sys 模块
 import socket
-
 # 创建 socket 对象
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # 获取本地主机名
