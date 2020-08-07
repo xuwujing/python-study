@@ -14,6 +14,8 @@ mycursor.execute("SHOW TABLES")
 for x in mycursor:
     print(x)
 
+mycursor.execute("CREATE TABLE sites (name VARCHAR(255), url VARCHAR(255))")
 
 print(mydb)
 
+mycursor.close()
