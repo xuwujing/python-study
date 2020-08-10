@@ -24,7 +24,7 @@ data = {
     'name': 'xuwujing',
     'url': 'http://www.panchengming.com'
 }
-
+# 输出json数据
 json_str = json.dumps(data)
 print("Python 原始数据：", repr(data))
 print("JSON 对象：", json_str)
