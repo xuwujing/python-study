@@ -6,12 +6,18 @@ import calendar
 ticks = time.time()
 print ("当前时间戳为:", ticks)
 
+print ("当前时间戳为格式化:", int(time.time()))
+
 localtime = time.localtime(time.time())
 print ("本地时间为 :", localtime)
 
 localtime = time.asctime( time.localtime(time.time()) )
 print ("本地时间为 :", localtime)
 
+
+timeArray = time.localtime(ticks)
+otherStyleTime = time.strftime("%Y-%m-%d %H:%M:%S", timeArray)
+print("本地时间格式化:",otherStyleTime)
 # python中时间日期格式化符号：
 # %y 两位数的年份表示（00-99）
 # %Y 四位数的年份表示（000-9999）
@@ -53,3 +59,19 @@ cal = calendar.month(2020, 8)
 print ("以下输出2020年8月份的日历:")
 print (cal)
 
+# 字符类型的时间1
+tss1 = '2019-05-31 15:12:54'
+# 转为时间数组
+timeArray = time.strptime(tss1, "%Y-%m-%d %H:%M:%S")
+print(timeArray)
+# 转为时间戳
+timeStamp = int(time.mktime(timeArray))
+print(timeStamp)  # 1559286774
+print(int(time.mktime(time.strptime(tss1, "%Y-%m-%d %H:%M:%S"))))
+# timeArray可以调用tm_year等
+print(timeArray.tm_year)   # 2019
+# 字符类型的时间2
+tss2 = "Fri Jun 21 13:22:37 +0800 2019"
+timeArray = time.strptime(tss2, "%a %b %d %H:%M:%S %z %Y")
+# timeArray可以调用tm_year等
+print(timeArray.tm_year)   # 2019

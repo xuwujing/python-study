@@ -14,7 +14,7 @@ dict['one'] = "1 - hello"
 dict[2]     = "2 - world"
 tinydict = {'name': 'pancm','age':18, 'site': 'www.panchengming.com'}
 # 输出键为 'one' 的值
-print (dict['one'])
+print (dict.get('one', 'two'))
 # 输出键为 2 的值
 print (dict[2])
 # 输出完整的字典
