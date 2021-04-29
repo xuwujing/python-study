@@ -9,7 +9,7 @@ logging.basicConfig(filename='example.log')
 
 logging.info('hello')
 logging.warning('good luck')
-logging.error('%s,你好','pancm')
+logging.error('%s,你好', 'pancm')
 
 log = logging.getLogger('pancm')
 # 生成一个StreamHandler，这个Handler可以将日志输出到console中
