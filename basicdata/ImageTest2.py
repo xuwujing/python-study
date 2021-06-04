@@ -1,4 +1,4 @@
-# 图片算法
+# 图片算法 https://cloud.tencent.com/developer/article/1370938
 
 from matplotlib import pyplot as plt
 from PIL import Image, ImageDraw
